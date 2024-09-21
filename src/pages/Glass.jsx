@@ -6,8 +6,8 @@ const Glass = () => {
   return (
     <div>
       <h1>Glass</h1>
-      <p>When glass is not broken, it can be disposed of in recycling just like other recyclable materials.</p>
-      <p>Rinse glass bottles or containers with leftover food before recycling. If there is leftover food, dispose of them as general waste.</p>
+      <p>When glass is not broken, it can be disposed of in recycling just like other recyclable materials</p>
+      <p>Rinse glass bottles or containers with leftover food before recycling. If there is leftover food, dispose of them as general waste</p>
       <h3>However, when it is broken, you should do the following as shown in the video</h3>
       <BrokenGlass />
       {/* How to? 제목 추가 */}

@@ -6,7 +6,7 @@ const FoodWaste = () => {
   return (
     <PageWrapper>
       <h1>Food Waste</h1>
-      <p>Information about food waste disposal.</p>
+      <p>Information about food waste disposal</p>
     </PageWrapper>
   );
 };

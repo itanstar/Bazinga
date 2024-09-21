@@ -6,7 +6,7 @@ const Paper = () => {
   return (
     <PageWrapper>
       <h1>Paper Waste</h1>
-      <p>Information about recycling paper waste.</p>
+      <p>Information about recycling paper waste</p>
     </PageWrapper>
   );
 };
