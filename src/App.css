@@ -1,16 +1,19 @@
+/* App.css */
 .app {
   display: flex;
 }
 
 .sidebar {
-  width: 200px;
-  background-color: #f4f4f4;
-  transition: transform 0.3s ease;
-  transform: translateX(-100%);
+  width: 160px; /* 사이드바 너비 */
+  background-color: #f4f4f4; /* 사이드바 배경색 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* 그림자 효과 추가 */
+  transform: translateX(-100%); /* 초기 위치 설정 */
   position: fixed; /* 고정 위치 */
   height: 100%; /* 전체 높이 */
   z-index: 1; /* 내용 위에 나타나도록 */
-  font-family: 'Trebuchet MS', sans-serif;
+  font-family: 'Trebuchet MS', sans-serif; /* 폰트 설정 */
+  padding: 20px; /* 내부 여백 */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* 사이드바 그림자 */
 }
 
 .sidebar.open {
@@ -21,6 +24,7 @@
   flex: 1;
   padding: 20px;
   margin-left: 200px; /* 사이드바 너비만큼 여백 추가 */
+  transition: margin-left 0.3s ease; /* 콘텐츠 여백 전환 효과 */
 }
 
 .hamburger {
@@ -28,20 +32,34 @@
   background: none;
   border: none;
   cursor: pointer;
+  transition: transform 0.3s; /* 버튼 애니메이션 */
+}
+
+.hamburger:hover {
+  transform: scale(1.1); /* 호버 시 크기 증가 */
 }
 
 .menu-item {
-  padding: 10px; /* 패딩 추가 */
-  background-color: #f4f4f4; /* 배경색 */
-  border: 1px solid #ccc; /* 테두리 */
-  border-radius: 5px; /* 모서리 둥글게 */
-  margin: 5px 0; /* 항목 간 여백 */
-  text-align: center; /* 텍스트 중앙 정렬 *
-  cursor: pointer; /* 커서 모양 변경 */
+  width: 100%; /* 사이드바에 꽉 차도록 */
+  height: 120px; /* 박스 높이 */
+  background-color: #014d2d; /* 배경색 */
+  color: white; /* 글자색 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0; /* 간격 */
+  text-align: center;
+  cursor: pointer; /* 포인터 모양 */
+  transition: background-color 0.3s, transform 0.2s; /* 호버 및 클릭 효과 */
 }
 
 .menu-item:hover {
-  background-color: #e0e0e0; /* 호버 시 배경색 변경 */
+  background-color: #656464; /* 호버 시 배경색 변경 */
+  transform: scale(1.05); /* 호버 시 크기 증가 */
+}
+
+.menu-item:active {
+  transform: scale(0.95); /* 클릭 시 크기 감소 */
 }
 
 .sidebar ul {
@@ -55,3 +73,24 @@
   text-decoration: none; /* 밑줄 제거 */
 }
 
+/* 세부 카테고리 스타일 */
+.sub-sidebar {
+  background-color: #e0e0e0; /* 세부 사이드바 배경색 */
+  padding: 10px; /* 내부 여백 */
+  margin-top: 20px; /* 위쪽 여백 */
+  border-radius: 50px; /* 모서리 둥글게 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
+}
+
+.sub-menu-item {
+  background-color: #067902; /* 세부 메뉴 아이템 배경색 */
+  color: white; /* 글자색 */
+  padding: 10px; /* 내부 여백 */
+  margin: 5px 0; /* 간격 */
+  cursor: pointer; /* 포인터 모양 */
+  transition: background-color 0.3s; /* 호버 효과 */
+}
+
+.sub-menu-item:hover {
+  background-color: #505050; /* 호버 시 배경색 변경 */
+}

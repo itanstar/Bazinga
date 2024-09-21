@@ -1,0 +1,14 @@
+// src/pages/GeneralWaste.jsx
+import React from 'react';
+import PageWrapper from '../components/PageWrapper';
+
+const GeneralWaste = () => {
+  return (
+    <PageWrapper>
+      <h1>General Waste</h1>
+      <p>Information about general waste disposal.</p>
+    </PageWrapper>
+  );
+};
+
+export default GeneralWaste;
