@@ -20,13 +20,19 @@ const App = () => {
   };
 
   const toggleRecycleSubmenu = () => {
-    setShowRecycleSubmenu(!showRecycleSubmenu);
+    setShowRecycleSubmenu(prev => !prev);
     setShowNonRecycleSubmenu(false); // Close non-recycle submenu
   };
 
   const toggleNonRecycleSubmenu = () => {
-    setShowNonRecycleSubmenu(!showNonRecycleSubmenu);
+    setShowNonRecycleSubmenu(prev => !prev);
     setShowRecycleSubmenu(false); // Close recycle submenu
+  };
+
+  const handleHomeClick = () => {
+    setIsOpen(false); // 사이드바 닫기
+    setShowRecycleSubmenu(false); // Recycle 서브메뉴 닫기
+    setShowNonRecycleSubmenu(false); // Non-Recycle 서브메뉴 닫기
   };
 
   return (
@@ -38,12 +44,21 @@ const App = () => {
         toggleNonRecycleSubmenu={toggleNonRecycleSubmenu} 
         showRecycleSubmenu={showRecycleSubmenu} 
         showNonRecycleSubmenu={showNonRecycleSubmenu} 
+        handleHomeClick={handleHomeClick} // Home 클릭 핸들러 추가
       />
     </Router>
   );
 };
 
-const AppContent = ({ isOpen, toggleMenu, toggleRecycleSubmenu, toggleNonRecycleSubmenu, showRecycleSubmenu, showNonRecycleSubmenu }) => {
+const AppContent = ({ 
+  isOpen, 
+  toggleMenu, 
+  toggleRecycleSubmenu, 
+  toggleNonRecycleSubmenu, 
+  showRecycleSubmenu, 
+  showNonRecycleSubmenu,
+  handleHomeClick // Home 클릭 핸들러 추가
+}) => {
   const location = useLocation();
 
   const isRecyclePage = location.pathname.startsWith('/recycle');
@@ -54,7 +69,7 @@ const AppContent = ({ isOpen, toggleMenu, toggleRecycleSubmenu, toggleNonRecycle
       <div className={`sidebar ${isOpen ? 'open' : ''} ${isRecyclePage || isNonRecyclePage ? 'hide' : ''}`}>
         <ul>
           <li>
-            <Link to="/" style={{ textDecoration: 'none' }}>
+            <Link to="/" style={{ textDecoration: 'none' }} onClick={handleHomeClick}>
               <div className="menu-item">Home</div>
             </Link>
           </li>
