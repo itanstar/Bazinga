@@ -6,6 +6,7 @@ const GeneralWaste = () => {
   return (
     <PageWrapper>
       <h1>General Waste</h1>
+      <img src="\trashbag.png" alt="trash bag" width="350" height="450" />
       <p>Information about general waste disposal.</p>
     </PageWrapper>
   );
