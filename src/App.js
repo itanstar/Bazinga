@@ -70,14 +70,14 @@ const AppContent = ({
         <ul>
           <li>
             <Link to="/" style={{ textDecoration: 'none' }} onClick={handleHomeClick}>
-              <div className="menu-item">Home</div>
+              <div className="menu-item fade-in">Home</div>
             </Link>
           </li>
           <li onClick={toggleRecycleSubmenu}>
-            <div className="menu-item">Recycle</div>
+            <div className="menu-item fade-in">Recycle</div>
           </li>
           {showRecycleSubmenu && (
-            <ul className="sub-menu">
+            <ul className="sub-menu fade-in">
               <li>
                 <Link to="/recycle/plastic" style={{ textDecoration: 'none' }}>
                   <div className="sub-menu-item">Plastic</div>
@@ -96,10 +96,10 @@ const AppContent = ({
             </ul>
           )}
           <li onClick={toggleNonRecycleSubmenu}>
-            <div className="menu-item">Non Recycle Waste</div>
+            <div className="menu-item fade-in">Non Recycle Waste</div>
           </li>
           {showNonRecycleSubmenu && (
-            <ul className="sub-menu">
+            <ul className="sub-menu fade-in">
               <li>
                 <Link to="/non-recycle-waste/general" style={{ textDecoration: 'none' }}>
                   <div className="sub-menu-item">General Waste</div>
