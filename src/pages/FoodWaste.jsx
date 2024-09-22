@@ -49,7 +49,7 @@ const FoodWaste = () => {
       <h2 style={{ fontSize: '24px', fontWeight: 'bold', margin: '20px 0' }}>3. Place the food waste in the container, attach the sticker, and dispose of it at the designated time.</h2>
       <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: '18px'}}>By visiting the address below, you can find the disposal and collection times for each district.</p>
       <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: '18px'}}>Locate your district, attach the stickers to each container at the specified times, and place them in front of your main door.</p>
-      <a href="https://www.buk.daegu.kr/index.do?menu_id=00001792" target="_blank" rel="noopener noreferrer">The disposal and collection times for food waste in each district of Daegu Buk-gu, Daegu.</a>
+      <a href="https://www.buk.daegu.kr/index.do?menu_id=00001792" target="_blank" rel="noopener noreferrer">The disposal(배출) and collection(수거) times for food waste in each district of Daegu Buk-gu, Daegu.</a>
     </PageWrapper>
   );
 };

@@ -7,9 +7,9 @@ const GeneralWaste = () => {
     <PageWrapper>
       <h1>General Waste</h1>
       <img src="\trashbag.png" alt="trash bag" width="350" height="450" />
-      <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: '18px'}}>General waste refers to the waste that cannot be recycled or composted</p>
-      <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: '18px'}}>It is important to dispose of general waste properly to ensure a clean and safe environment</p>
-      <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: '18px'}}>All general waste should be placed in designated general waste bags, you can buy general bags at any convenience stores or supermarkets</p>
+      <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: '18px'}}>General waste refers to the waste that cannot be recycled or composted.</p>
+      <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: '18px'}}>It is important to dispose of general waste properly to ensure a clean and safe environment.</p>
+      <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: '18px'}}>All general waste should be placed in designated general waste bags, you can buy general bags at any convenience stores or supermarkets.</p>
       <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: '18px' }}>
         General waste bags are collected <strong>from Monday to Saturday mornings</strong>, except for Sundays
       </p>

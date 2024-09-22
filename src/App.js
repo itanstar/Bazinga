@@ -84,11 +84,6 @@ const AppContent = ({
                 </Link>
               </li>
               <li>
-                <Link to="/recycle/paper" style={{ textDecoration: 'none' }}>
-                  <div className="sub-menu-item">Paper</div>
-                </Link>
-              </li>
-              <li>
                 <Link to="/recycle/glass" style={{ textDecoration: 'none' }}>
                   <div className="sub-menu-item">Glass</div>
                 </Link>
@@ -123,7 +118,6 @@ const AppContent = ({
           <Route path="/" element={<Main />} />
           <Route path="/recycle" element={<Recycle />} />
           <Route path="/recycle/plastic" element={<Plastic />} />
-          <Route path="/recycle/paper" element={<Paper />} />
           <Route path="/recycle/glass" element={<Glass />} />
           <Route path="/non-recycle-waste" element={<NonRecycleWaste />} />
           <Route path="/non-recycle-waste/general" element={<GeneralWaste />} />
