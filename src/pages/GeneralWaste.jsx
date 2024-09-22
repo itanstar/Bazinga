@@ -20,7 +20,7 @@ const GeneralWaste = () => {
         <li>Do not overfill the bag; it should be easy to close.</li>
         <li>Place the bag in the appropriate collection point on your designated collection day</li>
       </ol>
-      <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: '18px'}}>By following these guidelines, you help reduce landfill waste and contribute to a cleaner community</p>
+      <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: '18px'}}>By following these guidelines, you help reduce landfill waste and contribute to a cleaner community.</p>
     </PageWrapper>
   );
 };

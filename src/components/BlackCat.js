@@ -4,7 +4,7 @@ import React from 'react';
 const BlackCat = () => {
   return (
     <div>
-      <img src="/blackcat.gif" alt="My blackcat" style={{ width: '600px' }} />
+      <img src="/blackcat.gif" alt="My blackcat" style={{ width: '500px' }} />
     </div>
   );
 };

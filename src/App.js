@@ -110,7 +110,7 @@ const AppContent = ({
         </ul>
       </div>
 
-      <div className="content">
+      <div className="content" >
         <button className="hamburger" onClick={toggleMenu}>
           &#9776; {/* Hamburger icon */}
         </button>

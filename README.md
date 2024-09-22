@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# <버징가> - <쓰레기 선생>
+## 서비스 요약
+쓰레기 선생은 최근 대구에 늘어나는 외국인을 위해 대구에서의 크게 한국에서의 쓰레기를 관리하는 방법을 가르쳐주는 웹사이트입니다.
+여러 종류의 쓰레기를 어떻게 처리하면 되는지 영어로 된 글과 사진과 GIF를 통해 배울 수 있습니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 주제 구분
+-	S타입 대구 시내의 환경 문제를 해결하고 지속가능한 발전을 지원하는 서비스
+  
+## 팀원 소개
+팀원은 플렛폼소프트웨어학과 23학번 손의진, 김규태 2명으로 이루어져있습니다.
+버징가는 <빅뱅 이론>이라는 시트콤의 쉘던이라는 캐릭터가 남을 놀래킬 때 하는 말인데, 그만큼 놀라운 프로젝트를 진행하고자 하여 팀명으로 선정하였습니다.
 
-## Available Scripts
+## 시연 영상
+(필수) Youtube 링크
 
-In the project directory, you can run:
+## 서비스 소개
+### 서비스 개요
+각 나라마다의 쓰레기 처리 방식이 다르고 또 한국은 재활용을 엄격히 하는 나라이기에, 외국에서 온 사람들이 쓰레기를 처리하는 것에 어색할 수 있습니다.
+하지만 처리방식은 모두 한국어로 적혀있고, 글로만 적혀있는 규칙은 외국인에게는 더더욱 접근하기 어려울 것입니다.
+그래서 사진과 GIF, 영어를 사용한 외국인을 위한 쓰레기 처리 가이드북이 바로 쓰레기 선생입니다.
+재활용 쓰레기와 재활용하지 않는 쓰레기를 구분하여 각 종류의 쓰레기 처리 방식을 쉽게 확인할 수 있습니다.
 
-### `npm start`
+### 타서비스와의 차별점
+우선 외국인에게 집중된 다는 점에서 다른 서비스와는 다르게 영어로 되어있습니다.
+그리고 사진과 직접 쓰레기를 처리하는 GIF를 통해 많은 글을 읽지 않더라도 쉽게 쓰레기 처리 방법을 배울 수 있습니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 구현 내용 및 결과물
+우선 좌측 상단에 있는 메뉴 버튼을 통해 사이드바를 열면 쓰레기가 재활용 쓰레기와 재활용하지 않는 쓰레기로 구분이 되어있습니다.
+각 버튼을 눌렀을 때 해당하는 쓰레기 종류가 나타납니다. (재활용 쓰레기 -> 플라스틱, 유리, 등등...)
+그 버튼을 누르면 해당하는 쓰레기의 처리방식을 알 수 있는 글이 나타납니다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 구현 방식
+리액트를 사용하여 구현하였습니다.
+리액트에서 사용하는 JSX 파일과 CSS 파일을 이용하여 웹사이트를 보기 쉽게 정리하였습니다.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 향후 개선 혹은 발전 방안
+아직 모든 종류의 쓰레기가 정리되어있지 않기에 계속해서 외국 학생들이 잘 모를 수 있는 쓰레기 처리 방식을 업데이트하여 조금 더 완벽한 웹사이트가 될 수 있습니다.
